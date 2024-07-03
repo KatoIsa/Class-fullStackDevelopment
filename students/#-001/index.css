@@ -1,0 +1,64 @@
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.head{
+    margin-bottom: 100px;
+}
+
+.main{
+    display: flex;
+    margin-bottom: 30px;
+}
+#search{
+    border-radius: 11px ;
+    margin-right: 1%;
+    width: 500px;
+    height: 40px;
+    background-color: #E9E7E7;
+    border: 3px solid #E9E7E7 ;
+    padding: 4px;
+    cursor: text;
+    
+}
+
+.button{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(34, 252, 34);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px;
+    border-radius: 11px ;
+
+}
+.checkbox{
+    margin: 12px;
+    margin-left: 300px;;
+}
+#checkbox{
+    width: 40px;
+    height: 20px;
+}
+.button2{
+
+    width: 100px;
+    height: 40px;
+    background-color: rgb(231 109 109);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px;
+    border-radius: 11px ;
+    margin-bottom: 10px;
+}
