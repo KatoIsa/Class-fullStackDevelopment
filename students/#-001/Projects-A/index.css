@@ -45,6 +45,7 @@ box-sizing: border-box;
 .checkbox{
     margin: 12px;
     margin-left: 300px;;
+    border: 10px ;
 }
 #checkbox{
     width: 40px;
