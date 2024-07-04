@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+
+
 * {
 padding: 0;
 margin: 0;
@@ -25,6 +28,10 @@ body{
     margin-top: 100px;
 }
 .head{
+    display: flex;
+    margin-top: 6em;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 100px;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -67,7 +74,7 @@ body{
     margin-left: 300px;;
     border: 10px ;
 }
-#checkbox{
+#checkbox, #checkbox1, #checkbox2{
     width: 40px;
     height: 20px;
 }
@@ -83,3 +90,87 @@ body{
     border-radius: 11px ;
     margin-bottom: 10px;
 }
+
+/* media query */
+@media (max-width: 600px) {
+    .head{
+        font-family: "Jockey One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+   background-color: #121828;
+   width: 100vw;
+   height: 30vh;
+   color: white;
+   margin-top: 0;
+   margin-bottom: 30px;
+   
+    }
+    .container{
+        margin-top: 50px;
+    }
+    #search{
+        width: 350px;
+        
+    }
+   
+  }
+  
+  @media (max-width:457px) {
+    #search{
+        width: 300px;
+        
+    }
+    .button2{
+        width: 80px;
+    }
+    .button{
+        width: 80px;
+    }
+    .checkbox{
+        margin-left: 250px;
+    }
+    
+  }
+
+  @media (width<396px){
+      #search{
+          width: 250px;
+          
+        }
+        .button2{
+            width: 75px;
+            font-size: 15px;
+        }
+        .button{
+            width: 70px;
+            height: 35px;
+        }
+        .checkbox{
+            margin-left: 200px;
+        }
+    }
+    
+    @media (max-width: 330px) {
+        .main {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #search {
+            margin-bottom: 7px;
+        }
+        .checkbox {
+            
+            justify-content: center;
+            align-items: center;
+            margin: 0px;
+        }
+        .button2 {
+            width: 70px;
+            font-size: 15px;
+        }
+        .button {
+            width: 70px;
+            height: 35px;
+        }
+    }
