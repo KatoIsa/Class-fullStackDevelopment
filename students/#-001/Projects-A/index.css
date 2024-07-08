@@ -128,6 +128,7 @@ label {
     }
     .button2 {
         width: 80px;
+        font-size: 18px;
     }
     .button {
         width: 80px;
@@ -147,8 +148,11 @@ label {
         height: 35px;
     }
     .checkbox {
-        margin-left: 200px;
+        /* margin-left: 300px; */
     }
+    label {
+        width: 150px; /* Adjust width as needed */
+        height: 40px;}
 }
 
 @media (max-width: 330px) {
