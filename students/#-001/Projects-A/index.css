@@ -1,64 +1,58 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
 
-
 * {
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
-
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 100px;
 }
-.head{
+
+.head {
     display: flex;
     margin-top: 6em;
     align-items: center;
     justify-content: center;
     margin-bottom: 100px;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
-
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
 }
 
-.main{
+.main {
     display: flex;
     margin-bottom: 30px;
 }
-#search{
-    border-radius: 11px ;
+
+#search {
+    border-radius: 11px;
     margin-right: 1%;
     width: 500px;
     height: 40px;
     background-color: #E9E7E7;
-    border: 3px solid #E9E7E7 ;
+    border: 3px solid #E9E7E7;
     padding: 4px;
     cursor: text;
-    
 }
 
-.button{
+.button {
     width: 100px;
     height: 40px;
     background-color: rgb(34, 252, 34);
@@ -66,111 +60,117 @@ body{
     font-size: 20px;
     font-weight: bold;
     border: 3px;
-    border-radius: 11px ;
-
+    border-radius: 11px;
 }
-.checkbox{
+
+.checkbox {
     margin: 12px;
-    margin-left: 300px;;
-    border: 10px ;
 }
-#checkbox, #checkbox1, #checkbox2{
-    width: 40px;
-    height: 20px;
-}
-.button2{
 
+.checkbox div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+label {
+    width: 200px; /* Adjust width as needed */
+    height: 40px;
+    padding: 8px;
+    background-color: #E9E7E7;
+    border: 3px solid #E9E7E7;
+    border-radius: 11px;
+    margin-right: 10px; /* Adjust spacing between label and checkbox */
+}
+
+#checkbox{
+    width: 20px; /* Adjust width and height for checkboxes */
+    height: 20px;
+    margin-right: 5px;
+}
+
+.button2 {
     width: 100px;
     height: 40px;
-    background-color: rgb(231 109 109);
+    background-color: rgb(231, 109, 109);
     color: white;
     font-size: 20px;
     font-weight: bold;
     border: 3px;
-    border-radius: 11px ;
+    border-radius: 11px;
     margin-bottom: 10px;
 }
 
-/* media query */
+/* Media Queries */
 @media (max-width: 600px) {
-    .head{
+    .head {
         font-family: "Jockey One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-   background-color: #121828;
-   width: 100vw;
-   height: 30vh;
-   color: white;
-   margin-top: 0;
-   margin-bottom: 30px;
-   
+        font-weight: 400;
+        font-style: normal;
+        background-color: #121828;
+        width: 100vw;
+        height: 30vh;
+        color: white;
+        margin-top: 0;
+        margin-bottom: 30px;
     }
-    .container{
+    .container {
         margin-top: 50px;
     }
-    #search{
+    #search {
         width: 350px;
-        
     }
-   
-  }
-  
-  @media (max-width:457px) {
-    #search{
-        width: 300px;
-        
-    }
-    .button2{
-        width: 80px;
-    }
-    .button{
-        width: 80px;
-    }
-    .checkbox{
-        margin-left: 250px;
-    }
-    
-  }
+}
 
-  @media (width<396px){
-      #search{
-          width: 250px;
-          
-        }
-        .button2{
-            width: 75px;
-            font-size: 15px;
-        }
-        .button{
-            width: 70px;
-            height: 35px;
-        }
-        .checkbox{
-            margin-left: 200px;
-        }
+@media (max-width: 457px) {
+    #search {
+        width: 300px;
     }
-    
-    @media (max-width: 330px) {
-        .main {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        #search {
-            margin-bottom: 7px;
-        }
-        .checkbox {
-            
-            justify-content: center;
-            align-items: center;
-            margin: 0px;
-        }
-        .button2 {
-            width: 70px;
-            font-size: 15px;
-        }
-        .button {
-            width: 70px;
-            height: 35px;
-        }
+    .button2 {
+        width: 80px;
     }
+    .button {
+        width: 80px;
+    }
+}
+
+@media (max-width: 396px) {
+    #search {
+        width: 250px;
+    }
+    .button2 {
+        width: 75px;
+        font-size: 15px;
+    }
+    .button {
+        width: 70px;
+        height: 35px;
+    }
+    .checkbox {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 330px) {
+    .main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #search {
+        margin-bottom: 7px;
+    }
+    .checkbox {
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+    }
+    .button2 {
+        width: 70px;
+        font-size: 15px;
+    }
+    .button {
+        width: 70px;
+        height: 35px;
+    }
+}
