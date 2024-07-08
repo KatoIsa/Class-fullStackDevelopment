@@ -65,6 +65,7 @@ body {
 
 .checkbox {
     margin: 12px;
+    
 }
 
 .checkbox div {
@@ -80,11 +81,11 @@ label {
     background-color: #E9E7E7;
     border: 3px solid #E9E7E7;
     border-radius: 11px;
-    margin-right: 10px; /* Adjust spacing between label and checkbox */
+    margin-right: 10px; 
 }
 
 #checkbox{
-    width: 20px; /* Adjust width and height for checkboxes */
+    width: 20px; 
     height: 20px;
     margin-right: 5px;
 }
@@ -100,6 +101,8 @@ label {
     border-radius: 11px;
     margin-bottom: 10px;
 }
+.underlined {
+    text-decoration-line:line-through;}
 
 /* Media Queries */
 @media (max-width: 600px) {
